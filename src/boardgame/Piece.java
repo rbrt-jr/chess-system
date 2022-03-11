@@ -3,7 +3,7 @@ package boardgame;
 public abstract class Piece {
 	protected Position position;
 	private Board board;
-//verificado
+
 	public Piece(Board board) {
 		this.board = board;
 		position = null;
@@ -30,4 +30,5 @@ public abstract class Piece {
 		}
 		return false;
 	}
+
 }
