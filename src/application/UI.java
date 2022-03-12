@@ -125,7 +125,7 @@ public class UI {
 		System.out.println(Arrays.toString(white.toArray()));
 		System.out.print(ANSI_RESET);
 
-		System.out.print("bLACK: ");
+		System.out.print("Black: ");
 		System.out.print(ANSI_YELLOW);
 		System.out.println(Arrays.toString(black.toArray()));
 		System.out.print(ANSI_RESET);
