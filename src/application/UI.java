@@ -1,5 +1,6 @@
 package application;
 
+import java.awt.color.CMMException;
 import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -61,6 +62,9 @@ public class UI {
 		System.out.println();
 		System.out.println("Turn: " + chessMatch.getTurn());
 		System.out.println("Wating player: " + chessMatch.getCurrentPlayer());
+		if (chessMatch.getCheck()) {
+			System.out.println("CHECK!!!");
+		}
 
 	}
 
@@ -109,21 +113,17 @@ public class UI {
 				.collect(Collectors.toList());
 
 		System.out.println("Captured pieces: ");
-		
+
 		System.out.print("White: ");
 		System.out.print(ANSI_WHITE);
 		System.out.println(Arrays.toString(white.toArray()));
 		System.out.print(ANSI_RESET);
-		
+
 		System.out.print("bLACK: ");
 		System.out.print(ANSI_YELLOW);
 		System.out.println(Arrays.toString(black.toArray()));
 		System.out.print(ANSI_RESET);
-		
-		
-		
-		
-		
+
 	}
 
 }
