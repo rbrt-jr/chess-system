@@ -14,7 +14,7 @@ public abstract class Piece {
 	protected Board getBoard() {
 		return board;
 	}
-	//primeira mudança comparada
+
 	public abstract boolean[][] possibleMoves();
 	
 	public boolean possibleMove(Position position) {
